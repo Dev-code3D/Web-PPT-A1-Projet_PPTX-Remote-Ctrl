@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPTX Remote Control - Web PPT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info" href="#">
+                <i class="bi bi-cpu-fill me-2"></i>PPTX Remote Control - Web PPT
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold gap-2">
+                    <li class="nav-item"><a class="nav-link px-3" href="#intro">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#features">Controls</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#purpose">Accessibility</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#hardware">Specs & Cost</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#sustainability">Eco-Design</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#media">Awards & Media</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-gradient text-white py-5 shadow-sm text-center">
+        <div class="container">
+            <div class="mb-4">
+                <span class="badge bg-warning text-dark px-4 py-2 fs-6 fw-bold text-uppercase shadow-sm">
+                    <i class="bi bi-trophy-fill me-2"></i> Winner: Sustainable Technologies Award 2026
+                </span>
+            </div>
+            <h1 class="display-2 fw-extrabold mb-3 text-white">PPTX Remote Control</h1>
+            <p class="lead fs-3 text-light-50 max-w-3xl mx-auto mb-5 px-3">
+                An embedded, driverless hardware solution advancing digital accessibility and energy sobriety.
+            </p>
+            <div class="d-flex justify-content-center gap-2 mb-5 flex-wrap">
+                <span class="badge bg-secondary rounded-pill px-3 py-2 fs-6">Bluetooth Low Energy</span>
+                <span class="badge bg-secondary rounded-pill px-3 py-2 fs-6">USB HID Native</span>
+                <span class="badge bg-secondary rounded-pill px-3 py-2 fs-6">6-DOF Spatial Motion</span>
+                <span class="badge bg-secondary rounded-pill px-3 py-2 fs-6">Eco-Designed</span>
+            </div>
+            <a href="#intro" class="btn btn-info btn-lg px-5 py-3 fw-bold shadow">
+                Begin Presentation <i class="bi bi-arrow-right-short ms-1"></i>
+            </a>
+        </div>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <div class="slide-card">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="slide-subtitle">1 / Introduction</span>
+                        <h2 class="display-5 slide-title">Project Vision</h2>
+                        <p class="fs-4 text-secondary leading-relaxed mb-4">
+                            The <strong>PPTX Remote Control</strong> is an autonomous electronic device engineered to streamline presentation delivery without heavy reliance on traditional user-interface peripherals.
+                        </p>
+                        <p class="fs-5 text-muted">
+                            By moving controls off computers and into a single ergonomic object, it helps educators, speakers, and students focus on audience interaction over technical mechanics.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <label class="d-block text-muted mb-2 small fw-bold text-uppercase">System Architecture Blueprint</label>
+                        <div class="img-zoom-container shadow-lg" data-bs-toggle="modal" data-bs-target="#modalSketch">
+                            <img src="img/CroquisA1.JPG" class="img-fluid" alt="System Architecture Sketch Blueprint">
+                            <div class="zoom-overlay">
+                                <i class="bi bi-zoom-in fs-3"></i>
+                                <span>Click to expand blueprint</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="bg-light-subtle">
+        <div class="container">
+            <div class="slide-card">
+                <div class="mb-5">
+                    <span class="slide-subtitle">2 / System Capabilities</span>
+                    <h2 class="display-5 slide-title">Core Functional Components</h2>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="feature-bar p-4 h-100">
+                            <div class="icon-square bg-primary-subtle text-primary mb-3"><i class="bi bi-joystick"></i></div>
+                            <h4 class="fw-bold">5D Joystick Navigation</h4>
+                            <p class="text-muted mb-0">Implements continuous 2-axis sliding control for fluid slide backward/forward motions and digital document panning.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="feature-bar p-4 h-100">
+                            <div class="icon-square bg-success-subtle text-success mb-3"><i class="bi bi-magic"></i></div>
+                            <h4 class="fw-bold">3D AirMouse Control</h4>
+                            <p class="text-muted mb-0">Decodes physical wrist gestures in space via an I2C spatial motion block into smooth, on-screen pointer trajectories.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="feature-bar p-4 h-100">
+                            <div class="icon-square bg-danger-subtle text-danger mb-3"><i class="bi bi-brightness-high"></i></div>
+                            <h4 class="fw-bold">Dual Pointer System</h4>
+                            <p class="text-muted mb-0">Combines a built-in hardware low-draw physical laser with software virtual display highlighting hooks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="purpose">
+        <div class="container">
+            <div class="slide-card">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="slide-subtitle">3 / Social Responsibility</span>
+                        <h2 class="display-5 slide-title">Digital Accessibility & Inclusion</h2>
+                        <p class="fs-4 text-dark mb-4">
+                            "True technology must lower barriers, not construct them."
+                        </p>
+                        <div class="p-4 bg-light rounded-3 border-start border-primary border-4 mb-3">
+                            <h5 class="fw-bold text-primary"><i class="bi bi-heart-pulse-fill me-2"></i>Motor Skill Optimization</h5>
+                            <p class="mb-0 text-muted fs-5">Simplifies microcomputer interactions for users facing physical motor control constraints, reducing complex multi-key inputs to centralized ergonomic gestures.</p>
+                        </div>
+                        <p class="text-muted fs-5">
+                            The driverless architecture guarantees immediate use across diverse educational settings, preventing isolation induced by configuration requirements.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <span class="d-block text-muted mb-2 small fw-bold text-uppercase">Project Deployment Gallery</span>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="img-zoom-container shadow-sm" data-bs-toggle="modal" data-bs-target="#modalStandMaquette">
+                                    <img src="img/stand_maquette.jpg" class="img-fluid" alt="IUT Exhibition Stand Prototype">
+                                    <div class="zoom-overlay">
+                                        <i class="bi bi-zoom-in fs-4"></i>
+                                        <span class="small">Prototype Stand</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="img-zoom-container shadow-sm" data-bs-toggle="modal" data-bs-target="#modalStandPC">
+                                    <img src="img/stand_pc.jpg" class="img-fluid" alt="PC Integration Live Demo">
+                                    <div class="zoom-overlay">
+                                        <i class="bi bi-zoom-in fs-4"></i>
+                                        <span class="small">Live PC Demo</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="img-zoom-container shadow-sm" data-bs-toggle="modal" data-bs-target="#modalFacade">
+                                    <img src="img/facade.jpg" class="img-fluid" alt="Nancy Charlemagne Campus Facade" style="max-height: 180px; object-fit: cover; width: 100%;">
+                                    <div class="zoom-overlay">
+                                        <i class="bi bi-zoom-in fs-4"></i>
+                                        <span class="small">Nancy Charlemagne Campus</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hardware">
+        <div class="container">
+            <div class="slide-card">
+                <div class="mb-5">
+                    <span class="slide-subtitle">4 / Electronics & Procurement</span>
+                    <h2 class="display-5 slide-title">Technical Stack & Bill of Materials</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-xl-7">
+                        <div class="table-responsive bg-light p-4 rounded-4 shadow-sm border">
+                            <h4 class="fw-bold text-dark mb-3">Seeed Studio XIAO nRF52840 Core Specs</h4>
+                            <table class="table table-borderless align-middle mb-0 text-secondary fs-5">
+                                <tbody>
+                                    <tr class="border-bottom"><td><strong>Architecture:</strong></td><td>ARM Cortex-M4F (32-bit with hardware FPU) @ 64 MHz</td></tr>
+                                    <tr class="border-bottom"><td><strong>Memory Layer:</strong></td><td>1 MB Internal Flash | 256 KB RAM | 2 MB QSPI Flash</td></tr>
+                                    <tr class="border-bottom"><td><strong>Protocols:</strong></td><td>Native USB 2.0 | BLE 5.0 (Ultra-Low Draw)</td></tr>
+                                    <tr class="border-bottom"><td><strong>Onboard Blocks:</strong></td><td>6-DOF IMU Sensor (LSM6DS3TR-C) for 3D Motion</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-xl-5">
+                        <div class="card border-0 bg-dark text-white p-4 h-100 shadow-lg d-flex flex-column justify-content-between">
+                            <div>
+                                <h4 class="fw-bold text-info mb-3"><i class="bi bi-tags me-2"></i>Prototype Cost (V1)</h4>
+                                <ul class="list-unstyled d-flex flex-column gap-2 fs-5 text-white-50">
+                                    <li class="d-flex justify-content-between"><span>XIAO Development Board</span> <strong class="text-white">€9.50</strong></li>
+                                    <li class="d-flex justify-content-between"><span>5D Analog Joystick</span> <strong class="text-white">€3.20</strong></li>
+                                    <li class="d-flex justify-content-between"><span>Tactile Buttons (x5)</span> <strong class="text-white">€1.50</strong></li>
+                                    <li class="d-flex justify-content-between"><span>Arduino Laser Module</span> <strong class="text-white">€2.00</strong></li>
+                                    <li class="d-flex justify-content-between"><span>Misc. Bus Components</span> <strong class="text-white">€3.80</strong></li>
+                                </ul>
+                            </div>
+                            <div class="mt-4 pt-3 border-top border-secondary">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <span class="fs-2 fw-bold text-success">~ €20.00</span>
+                                        <small class="d-block text-muted">Total Build Outlay</small>
+                                    </div>
+                                    <span class="badge bg-secondary">Budget Ceiling: €35.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sustainability">
+        <div class="container">
+            <div class="slide-card">
+                <div class="mb-5">
+                    <span class="slide-subtitle">5 / Ecodesign</span>
+                    <h2 class="display-5 slide-title">Digital Sobriety</h2>
+                </div>
+                
+                <div class="row g-4 text-center fs-5">
+                    <div class="col-md-4">
+                        <div class="p-4 bg-light rounded-4 h-100 border-top border-success border-5 shadow-sm">
+                            <div class="text-success display-4 mb-3"><i class="bi bi-battery-charging"></i></div>
+                            <h4 class="fw-bold">Deep Sleep Optimizations</h4>
+                            <p class="text-muted fs-6 mb-0">Leverages hardware registers to limit standby current draw below 5 microamps, optimizing energy retention.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 bg-light rounded-4 h-100 border-top border-success border-5 shadow-sm">
+                            <div class="text-success display-4 mb-3"><i class="bi bi-recycle"></i></div>
+                            <h4 class="fw-bold">Modular Life Cycle</h4>
+                            <p class="text-muted fs-6 mb-0">Isolates functional components into separate pathways. Avoids resin bonding or glued modules to allow simple component replacement.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 bg-light rounded-4 h-100 border-top border-success border-5 shadow-sm">
+                            <div class="text-success display-4 mb-3"><i class="bi bi-git"></i></div>
+                            <h4 class="fw-bold">Open Future Roadmap</h4>
+                            <p class="text-muted fs-6 mb-0">Aims toward recycled outer casing filaments, localized internal PCB tracing revisions, and releasing detailed DIY build guides.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="media">
+        <div class="container">
+            <div class="slide-card">
+                <div class="mb-5">
+                    <span class="slide-subtitle">6 / Evaluation & Recognition</span>
+                    <h2 class="display-5 slide-title">Press Coverage & Distinctions</h2>
+                </div>
+                
+                <div class="card award-banner rounded-4 p-4 shadow-sm mb-5">
+                    <div class="row align-items-center g-4">
+                        <div class="col-auto">
+                            <div class="bg-warning bg-opacity-10 text-warning p-4 rounded-3 text-center">
+                                <i class="bi bi-award-fill display-3"></i>
+                                <span class="d-block small fw-bold text-dark mt-1">2026 LAUREATE</span>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <h3 class="fw-extrabold mb-1">Prix « Technologies Durables »</h3>
+                            <p class="text-muted mb-2"><i class="bi bi-calendar-check me-2"></i>March 20, 2026 - Challenge Ecologie et Solidarité, Université de Lorraine</p>
+                            <p class="mb-0 text-secondary fs-5">
+                                Awarded to <strong>Assem Hssini</strong> (L1 Computer Science, ISFATES) for developing a standalone interface tool that mitigates heavy auxiliary processing draw and promotes structural digital sobriety.
+                            </p>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div class="img-zoom-container shadow-sm border border-warning rounded-3 mx-auto" style="max-width: 150px;" data-bs-toggle="modal" data-bs-target="#modalTrophe">
+                                <img src="img/trophediplome.jpg" class="img-fluid" alt="Official Competition Trophy and Diploma Certificate">
+                                <div class="zoom-overlay">
+                                    <i class="bi bi-zoom-in fs-5"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h4 class="fw-bold text-dark mb-3"><i class="bi bi-journal-check me-2 text-primary"></i>Media Reference Indices</h4>
+                    <div class="list-group shadow-sm rounded-3 overflow-hidden fs-5">
+                        <a href="https://factuel.univ-lorraine.fr/article/retour-sur-le-challenge-ecologie-et-solidarite-2026/" target="_blank" class="list-group-item list-group-item-action py-3 d-flex justify-content-between align-items-center">
+                            <span><i class="bi bi-bookmark-star-fill text-primary me-3"></i><strong>Factuel Université de Lorraine</strong> - Challenge 2026 Post Event Breakdown</span>
+                            <i class="bi bi-box-arrow-up-right text-muted"></i>
+                        </a>
+                        <a href="https://eco-challenge.webnode.fr/" target="_blank" class="list-group-item list-group-item-action py-3 d-flex justify-content-between align-items-center">
+                            <span><i class="bi bi-globe2 text-success me-3"></i><strong>Challenge Platform Port</strong> - Official Competition Registry</span>
+                            <i class="bi bi-box-arrow-up-right text-muted"></i>
+                        </a>
+                        <a href="https://www.europesays.com/fr/869631/" target="_blank" class="list-group-item list-group-item-action py-3 d-flex justify-content-between align-items-center">
+                            <span><i class="bi bi-newspaper text-danger me-3"></i><strong>Europe Says News Hub</strong> - Regional Technology Focus Feature</span>
+                            <i class="bi bi-box-arrow-up-right text-muted"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white-50 py-5">
+        <div class="container text-center">
+            <h3 class="text-white fw-bold mb-1">Assem HSSINI</h3>
+            <p class="text-info fw-semibold mb-1">Computer Science Student - Web Engineering & Electronics</p>
+            <p class="text-info fw-semibold mb-3">DFHI-ISFATES / Université de Lorraine</p>
+
+            <div class="d-flex justify-content-center gap-4 my-4 fs-5">
+                <a href="https://github.com/Dev-code3D" class="text-white text-decoration-none" target="_blank"><i class="bi bi-github me-1"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/assem-hssini/" class="text-white text-decoration-none" target="_blank"><i class="bi bi-linkedin me-1"></i> LinkedIn</a>
+            </div>
+            <hr class="border-secondary w-50 mx-auto my-4">
+            <p class="small mb-0">&copy; 2026 Assem HSSINI. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="modalSketch" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark text-white border-0">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold text-info"><i class="bi bi-cpu-fill me-2"></i>System Architecture Blueprint</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <img src="img/CroquisA1.JPG" class="img-fluid rounded shadow-lg max-modal-img" alt="Detailed Technical Sketch">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalStandMaquette" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark text-white border-0">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold text-info"><i class="bi bi-shop me-2"></i>Exhibition Stand Prototype</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <img src="img/stand_maquette.jpg" class="img-fluid rounded shadow-lg max-modal-img" alt="Stand Maquette">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalStandPC" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark text-white border-0">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold text-info"><i class="bi bi-laptop me-2"></i>PC Hardware Integration Live Demo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <img src="img/stand_pc.jpg" class="img-fluid rounded shadow-lg max-modal-img" alt="PC Demo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalFacade" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-dark text-white border-0">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold text-info"><i class="bi bi-building me-2"></i>IUT Nancy Charlemagne Campus</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <img src="img/facade.jpg" class="img-fluid rounded shadow-lg max-modal-img" alt="Nancy Charlemagne Campus Facade">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalTrophe" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white border-0">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold text-warning"><i class="bi bi-award-fill me-2"></i>Official Diploma & Award Trophy</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-4">
+                    <img src="img/trophediplome.jpg" class="img-fluid rounded shadow-lg max-modal-img" alt="Official Laureate Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
